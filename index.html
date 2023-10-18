@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <h1 id="title">Chaves de Ativação</h1>
+
+    <div class="activation-section">
+        <!-- Adicione a div para agrupar a label e a seleção de versão -->
+        <div id="selectVersionContainer">
+            <label for="selectVersion">Selecione a versão do programa:</label>
+            <select id="selectVersion">
+                <option value="" disabled selected>Selecione uma opção</option>
+            </select>
+        </div>
+
+        <div id="spacing"></div>
+
+        <!-- Adicione a div para agrupar a label e a seleção de modelo de chave -->
+        <div id="selectModelContainer">
+            <label for="selectModel">Selecione o modelo de chave:</label>
+            <select id="selectModel">
+                <option value="" disabled selected>Selecione uma opção</option>
+            </select>
+        </div>
+
+        <div id="spacing"></div>
+
+        <button id="getActivationKey">Obter Chave de Ativação</button>
+    </div>
+
+
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+
+    <div id="activationKeyContainer">
+        <p id="activationKeyText">Chave de Ativação:</p>
+        <div id="activationKeyDisplayContainer">
+            <div id="activationKeyDisplay">Sua chave aparecerá aqui.</div>
+        </div>
+        <div id="activationKeyContent">
+            <button id="copyActivationKey" style="display: none;">Copiar</button>
+            <div id="copyNotification">Mensagem copiada</div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="keys.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
